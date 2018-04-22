@@ -13,7 +13,7 @@ import android.view.View;
  */
 public class MyView extends View {
 
-    Paint paint1,paint2,paint3,paint4;
+    Paint paint1,paint2,paint3,paint4,paint5;
     private Paint mPaint = new Paint();
 
 
@@ -23,6 +23,7 @@ public class MyView extends View {
         paint2 = new Paint();
         paint3 = new Paint();
         paint4 = new Paint();
+        paint5 = new Paint();
     }
 
     @Override
@@ -31,22 +32,25 @@ public class MyView extends View {
         RectF rectf2 = new RectF(0, 0, 720, 720);
         RectF rectf3 = new RectF(0, 0, 720, 720);
         RectF rectf4 = new RectF(0, 0, 720, 720);
+        RectF rectf5 = new RectF(0, 0, 180, 180);
 
         paint1.setColor(Color.argb(255, 255, 236, 185));
         paint2.setColor(Color.argb(255, 172, 226, 180));
         paint3.setColor(Color.argb(255, 184, 178, 234));
         paint4.setColor(Color.argb(255, 171, 231, 255));
+        paint5.setColor(Color.argb(255, 255, 255, 255));
 
-        rectf1.offset(0, 0);
         rectf1.offset(0, 0);
         rectf2.offset(0, 0);
         rectf3.offset(0, 0);
         rectf4.offset(0, 0);
+        rectf5.offset(270, 270);
 
         canvas.drawArc(rectf1, 0, 90, true, paint1);
         canvas.drawArc(rectf2, 90, 90, true, paint2);
         canvas.drawArc(rectf3, 180, 90, true, paint3);
         canvas.drawArc(rectf4, 270, 90, true, paint4);
+        canvas.drawArc(rectf5, 0, 360, true, paint5);
 
         mPaint.setTextSize(50);
 

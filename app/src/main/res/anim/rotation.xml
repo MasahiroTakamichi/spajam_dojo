@@ -3,7 +3,7 @@
     android:interpolator="@android:anim/decelerate_interpolator"
     android:repeatCount="0"
     android:fromDegrees="0.0"
-    android:toDegrees="0"
+    android:toDegrees="360"
     android:pivotX="30"
     android:pivotY="290"
     android:fillAfter="true"
